@@ -1,116 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8"/>
-		<title>Muffin  - A design focused front-end web template using SASS and Jekyll</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<link rel="author" href="humans.txt">
-		<meta name="description" content="Muffin  - A design focused front-end web template using SASS and Jekyll">
-		<link rel="stylesheet" href="css/style.css">
-	    <!--[if lt IE 9]>
-	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	    <![endif]-->
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-		<link rel="shortcut icon" href="ico/favicon.png">
+<html>
+  <head>
+    <title>Innovate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://use.fontawesome.com/a238456550.js"></script>
+  </head>
+<body>
 
-		stype
-	</head>
-	<body>
-	<!-- Header
-	    ================================================== -->
-		<header class="nav">
-			<div class="container">
-				<a class="n-logo" href="http://richbray.me/muffin/">
-					<img src="http://richbray.me/muffin/img/muffin_logo.svg" alt="muffin-logo">
-				</a>
-				<ul class="n-menu">
-					<li><a href="#flav">Flavours</a></li>
-					<li><a href="#feat">Features</a></li>
-					<li><a href="#inst">Install</a></li>
-					<li><a href="#vid">Videos</a></li>
-				</ul>
-			</div>
-		</header>
-		<main>
-	    <div class="hero">
-				<div class="container">
-					<div class="h-title">Muffin</div>
-					<div class="h-slogan">
-						A design focused front-end web template <br>using <a href="http://sass-lang.com/">SASS</a>, <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://gulpjs.com/" target="_blank">Gulp</a>.
-					</div>
-					<div class="h-button">
-						<a href="http://www.youtube.com/watch?v=sxiQmHlogdg" target="_blank" role="button" data-toggle="modal"><i class="icon-play-circle"></i></a>
-					</div>
-					<div class="h-version">
-						<a href="https://github.com/RichardBray/Muffin">Github</a>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-white w3-wide w3-padding-8 w3-card-2">
+    <li>
+      <img id="top-bar-icon" src="img/icon-small.png" width="40" height="40">
+    </li>
+    <li>
+      <a href="#home" class="w3-margin-left"><b>Innóvate</b> Consultores</a>
+    </li>
+    <!-- Float links to the right. Hide them on small screens -->
+    <li class="w3-right w3-hide-small">
+      <a href="#quienes" class="top-bar-menu">¿Qué hacemos?</a>
+      <a href="#productos" class="top-bar-menu">Productos</a>
+      <a href="#clientes" class="top-bar-menu">Clientes</a>
+      <a href="#capacitacion" class="top-bar-menu">Capacitación</a>
+      <a href="#contacto" class="top-bar-menu top-bar-menu-margin-right">Contacto</a>
+    </li>
+  </ul>
+</div>
 
-						<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9TCMAFMV7KZMS">Donate</a>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="img/architect.jpg" alt="Innovate" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Innóvate</b></span> <span class="w3-hide-small w3-text-light-grey">Consultores</span></h1>
+  </div>
+</header>
 
-						<a href="https://github.com/RichardBray/Muffin/wiki/Changelog">Version 1.2.0</a>
-					</div>
-				</div>
-			</div>
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
 
-			<div class="frap-plug" style="padding: 0.4em 0;"></div>
-			<div class="features" id="feat">
-				<div class="container">
-					<header class="head-text">
-						Main Features
-					</header>
-					<span class="sub-text">
-						Here are just of the main features that come with Muffin
-					</span>
-					<div class="n-logo m-line">
-						<img src="http://richbray.me/muffin/img/muffin_logo.svg" alt="muffin-logo">
-						<hr>
-					</div>
-				</div>
-			</div>
-		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-body">
-					<iframe width="525" height="320" src="http://www.youtube.com/embed/o_kjoYqI11M" frameborder="0" allowfullscreen></iframe>
-					<button style="float:right;" class="btn" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></button>
-				</div>
-			</div>
-		</main>
-		<footer>
-			<div class="container">
-				<div style="float:left;">
-					Project by <a href="http://www.github.com/euggie" target="_blank" style="padding-right:15px;"><b>Euggrie</b></a>
-				</div>
+  <!-- Productos Section -->
+  <div class="w3-container w3-padding-32" id="productos">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Productos</h3>
+  </div>
+  <div class="w3-padding-32">
+    <p>
+      Acompañamiento a las Organizaciones aprovechando sus oportunidades de mejora para innovar sus modelos de gestión ofreciéndoles soluciones de Sistemas y Otros Servicios Técnicos, a medida para el desarrollo de sus actividades.
+    </p>
+  </div>
 
-				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.innovate-consultores.com/" data-via="Ceiga" data-size="large">Tweet</a>
-				<script>
-				!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-				</script>
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Área de Sistemas</div>
+        <img src="img/3.jpg" alt="House" style="width:99%">
+      </div>
+      <p>
+        Servicios de consultoría con una amplia gama de posibilidades de acompañamiento satisfaciendo las necesidades y/o expectativas de nuestros clientes en el proceso de innovación y mejora continua de su gestión organizacional.
 
-			</div>
-		</footer>
+        Planificación, Diseño, Implantación, Desarrollo y Seguimiento de sistemas normalizados de gestión, dirigidos a organizaciones públicas o privadas de diversos rubros y tamaños, las que a partir de sus propias expectativas o necesidades, deciden implantar estas herramientas de mejora continua.
+      </p>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Capacitaciones in company</div>
+        <img src="img/1.jpg" alt="House" style="width:99%">
+      </div>
+      <p>
+        Seguridad de la Información <br />
+        Sistemas de Gestión de Calidad. <br />
+        Área de Seguridad y Salud Ocupacional
+      </p>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Diseño, Implementación y Seguimiento</div>
+        <img src="img/2.jpg" alt="House" style="width:100%">
+      </div>
+      <p>
+        Sistemas de Gestión de la Seguridad, Higiene y Salud Ocupacional (SYSO) <br />
+        Evaluación y Gestión de Riesgos. <br />
+        Planes de evacuación. <br />
+        Planes de Autoprotección. <br />
+        Plan de Señalización e iluminación de emergencia. <br />
+        Brigadas de protección contra incendios. <br />
+      </p>
+    </div>
+  </div>
 
-		<!-- Javascripts
-		    ================================================= -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-		<script src="js/jquery.backstretch.min.js"></script>
-		<script src="js/custom.js"></script>
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Capacitación</div>
+        <img src="img/5.jpg" alt="House" style="width:99%">
+      </div>
+      <p>
+        Seguridad y Salud Ocupacional.<br />
+        Primeros Auxilios.<br />
+        Normativa vigente en el área de Seguridad, Higiene y Salud Ocupacional en el Uruguay.<br />
+        Evaluaciones y mediciones<br />
+      </p>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Adicionales</div>
+        <img src="img/4.jpg" alt="House" style="width:99%">
+      </div>
+      <p>
+        Participación en comisiones bipartitas y tripartitas de Seguridad.
+      </p>
+    </div>
+  </div>
 
-	    <!-- Analytics
-	    ================================================== -->
-		<script type="text/javascript">
+  <!-- Quienes Somos Section -->
+  <div class="w3-container w3-padding-32" id="quienes">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Quiénes somos y qué hacemos</h3>
+    <p>
+      El equipo de Innóvate apunta a la innovación y la mejora continua en la gestión de los procesos de negocios en las organizaciones.
+    </p>
+    <p>
+      <h5>Nuetra Misión:</h5>
+      Somos un equipo de profesionales que brinda servicios de consultoría con una amplia gama de posibilidades de acompañamiento satisfaciendo las necesidades y/o expectativas de nuestros clientes en el proceso de innovación y mejora continua de su gestión organizacional.
+    </p>
+    <p>
+      <h5>Nuestra visión:</h5>
+      Convertirnos en referentes ante la necesidad de un cambio organizacional, enfocándonos en la innovación y mejora continua efectiva en la gestión de procesos de negocios de nuestros clientes.
+    </p>
+    <p>
+      <h5>Nuestros valores:</h5>
+      <ul>
+        <li>
+          <strong>Garantía de calidad:</strong> tenemos la capacidad de captar y fidelizar a nuestros clientes, mediante la satisfacción de sus necesidades y expectativas.
+        </li>
+        <li>
+          <strong>Integridad:</strong> La actuación íntegra no es sólo hacer las cosas bien, sino intentar hacer las cosas correctas. Como equipo actuamos internamente y hacia los demás con ética y sinceridad.
+        </li>
+        <li>
+          <strong>Innovación y creatividad:</strong> nos basamos en la generación, desarrollo de ideas y soluciones, que faciliten la consecución de elementos diferenciales competitivos para avanzar en la dirección deseada por nuestros clientes.
+        </li>
+      </ul>
 
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-35925166-1']);
-		  _gaq.push(['_trackPageview']);
+    </p>
+  </div>
 
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contacto">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Contacto</h3>
+    <p>Envíanos tu consulta y te contactaremos a la brevedad.</p>
+    <form action="form.asp" target="_blank">
+      <input class="w3-input" type="text" placeholder="Nombre" required name="Name">
+      <input class="w3-input w3-section" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section" type="text" placeholder="Asunto" required name="Subject">
+      <input class="w3-input w3-section" type="text" placeholder="Comentarios" required name="Comment">
+      <button class="w3-btn w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> Enviar
+      </button>
+    </form>
+  </div>
 
-		</script>
-	</body>
+<!-- End page content -->
+</div>
+
+<!-- Google Map -->
+<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="http://eugeniagrieff.co.uk" title="Euggrie" target="_blank" class="w3-hover-text-green">euggrie,</a>
+    Copyright © 2016 - Innóvate Consultores.
+    Stay connected :&nbsp;
+
+    <a href="http://www.linkedin.com/company/#" target="_blank" rel="noreferrer" class="social-media">
+      <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="http://www.twitter.com/#" target="_blank" rel="noreferrer" class="social-media">
+      <i class="fa fa-twitter"></i>
+    </a>
+    <a href="http://www.youtube.com/user/#" target="_blank" rel="noreferrer" class="social-media">
+      <i class="fa fa-youtube"></i>
+    </a>
+    <a href="https://plus.google.com/+#/posts" target="_blank" rel="noreferrer" class="social-media"><i class="fa fa-google-plus"></i>
+    </a>
+    <a href="https://www.facebook.com/#" target="_blank" rel="noreferrer" class="social-media">
+      <i class="fa fa-facebook"></i>
+    </a>
+  </p>
+</footer>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="js/script.js"></script>
+
+</body>
 </html>
